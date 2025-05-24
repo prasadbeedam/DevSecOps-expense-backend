@@ -86,7 +86,7 @@ pipeline {
             }
             steps {
                 sh """
-                    aws eks update-kubeconfig --region ${region} --name expense
+                    aws eks update-kubeconfig --region ${region} --name expense-dev
                     kubectl apply -f manifest.yaml
                 """
             }
